@@ -1,0 +1,165 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+        <title>Solar System</title>
+        <style>
+         #sun {
+  fill: yellow;
+  stroke: orange;
+  stroke-width: 5;
+}
+      
+          #mercury {
+            fill: gray;
+            animation: mercury-orbit 88.8s linear infinite;
+          }
+      
+          #venus {
+            fill: orange;
+            animation: venus-orbit 225s linear infinite;
+          }
+      
+          #earth {
+            fill: blue;
+            animation: earth-orbit 36525ms linear infinite;
+          }
+      
+          #mars {
+            fill: red;
+            animation: mars-orbit 68724ms linear infinite;
+          }
+      
+          #jupiter {
+            fill: orange;
+            animation: jupiter-orbit 4332.59ms linear infinite;
+          }
+      
+          #saturn {
+            fill: teal;
+            animation: saturn-orbit 10759.22ms linear infinite;
+          }
+      
+          #uranus {
+            fill: lightblue;
+            animation: uranus-orbit 30688.5ms linear infinite;
+          }
+      
+          #neptune {
+            fill: darkblue;
+            animation: neptune-orbit 60182ms linear infinite;
+          }
+      
+          #pluto {
+            fill: gray;
+            animation: pluto-orbit 90560ms linear infinite;
+          }
+      
+          @keyframes mercury-orbit {
+            from {
+              transform: rotate(0deg);
+            }
+            to {
+              transform: rotate(360deg);
+            }
+          }
+      
+          @keyframes venus-orbit {
+            from {
+              transform: rotate(0deg);
+            }
+            to {
+              transform: rotate(360deg);
+            }
+          }
+      
+          @keyframes earth-orbit {
+            from {
+              transform: rotate(0deg);
+            }
+            to {
+              transform: rotate(360deg);
+            }
+          }
+      
+          @keyframes mars-orbit {
+            from {
+              transform: rotate(0deg);
+            }
+            to {
+              transform: rotate(360deg);
+            }
+          }
+      
+          @keyframes jupiter-orbit {
+            from {
+              transform: rotate(0deg);
+            }
+            to {
+              transform: rotate(360deg);
+            }
+          }
+      
+          @keyframes saturn-orbit {
+            from {
+              transform: rotate(0deg);
+            }
+            to {
+              transform: rotate(360deg);
+            }
+          }
+      
+          @keyframes uranus-orbit {
+            from {
+              transform: rotate(0deg);
+            }
+            to {
+              transform: rotate(360deg);
+            }
+          }
+      
+          @keyframes neptune-orbit {
+            from {
+              transform: rotate(0deg);
+            }
+            to {
+              transform: rotate(360deg);
+            }
+          }
+      
+          @keyframes pluto-orbit {
+            from {
+              transform: rotate(0deg);
+            }
+            to {
+              transform: rotate(360deg);
+            }
+          }
+        </style>
+      </head>
+      
+  <body>
+    <svg width="2000" height="2000">
+        <linearGradient id="space" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#00000" />
+            <stop offset="1" stop-color="#b300ff" />
+          </linearGradient>
+            <rect id="space" width="100%" height="100%" fill="url(#space)" />
+        <linearGradient id="sun-gradient" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#FFFF00" />
+            <stop offset="1" stop-color="#FFA500" />
+          </linearGradient>
+          <circle id="sun-gradient" cx="100" cy="500" r="500" fill="url(#sun-gradient)" />
+        <circle id="mercury" class="planet-orbit" cx="200" cy="500" r="5" />
+        <circle id="venus" class="planet-orbit" cx="300" cy="500" r="10" />
+        <circle id="earth" class="planet-orbit" cx="400" cy="500" r="105" />
+        <circle id="mars" class="planet-orbit" cx="500" cy="500" r="20" />
+        <circle id="jupiter" class="planet-orbit" cx="600" cy="500" r="250" />
+        <circle id="saturn" class="planet-orbit" cx="700" cy="500" r="300" />
+        <circle id="uranus" class="planet-orbit" cx="800" cy="500" r="35" />
+        <circle id="neptune" class="planet-orbit" cx="900" cy="500" r="40" />
+        <circle id="pluto" class="planet-orbit" cx="1000" cy="500" r="45" />
+        
+    </svg>
+  </body>
+  </html>
+  
