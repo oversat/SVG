@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <title>Meteor Shower Animation</title>
+  </head>
+  <body>
+    <svg width="1000" height="1000">
+      <defs>
+        <path id="meteor" d="M10,10 L30,50 L70,50 L45,70 L55,30 L90,40 L60,10 L75,90 L25,90 L40,60 Z" />
+        <radialGradient id="gradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+          <stop offset="0" stop-color="#ffff00" stop-opacity="1" />
+          <stop offset="1" stop-color="#ff0000" stop-opacity="0" />
+        </radialGradient>
+      </defs>
+      <g id="meteors">
+        <use xlink:href="#meteor" fill="url(#gradient)" transform="scale(20) translate(475,-2000)" />
+        <animateTransform 
+          attributeName="transform"
+          type="translate"
+          from="475,-2000"
+          to="475,800"
+          dur="5s"
+          begin="0s"
+          fill="freeze" />
+      </g>
+      <animate 
+        xlink:href="#meteors"
+        attributeName="transform"
+        begin="0s"
+        dur="6s"
+        repeatCount="indefinite">
+          <randomize values="-1000;1000;-500;500;-100;100;0" />
+        </animate>
+    </svg>
+  </body>
+</html>
+
