@@ -6,13 +6,14 @@
     <svg width="1000" height="1000">
       <defs>
         <path id="meteor" d="M10,10 L30,50 L70,50 L45,70 L55,30 L90,40 L60,10 L75,90 L25,90 L40,60 Z" />
-        <radialGradient id="gradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
-          <stop offset="0" stop-color="#ffff00" stop-opacity="1" />
-          <stop offset="1" stop-color="#ff0000" stop-opacity="0" />
-        </radialGradient>
+        <linearGradient id="gradient" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#ff0000" stop-opacity="1" />
+          <stop offset="1" stop-color="#000000" stop-opacity="0" />
+        </linearGradient>
       </defs>
-      <g id="meteors">
-        <use xlink:href="#meteor" fill="url(#gradient)" transform="scale(20) translate(475,-2000)" />
+      <rect x="0" y="0" width="1000" height="1000" fill="#000000" />
+      <g id="meteors" style="z-index: 1;">
+        <use xlink:href="#meteor" fill="url(#gradient)" transform="scale(100) translate(475,-2000)" />
         <animateTransform 
           attributeName="transform"
           type="translate"
@@ -33,4 +34,3 @@
     </svg>
   </body>
 </html>
-
