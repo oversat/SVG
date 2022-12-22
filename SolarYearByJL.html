@@ -1,0 +1,198 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+        <title>"Solar Year" by JL</title>
+        <style>
+         #sun {
+          fill: yellow;
+          stroke: orange;
+          stroke-width: 5;
+          }
+
+          #mercury-g {
+            animation: mercury-orbit 88.8s linear infinite;
+          }
+      
+          #venus-g {
+            animation: venus-orbit 22500ms linear infinite;
+          }
+      
+          #earth-g {
+            animation: earth-orbit 36525ms linear infinite;
+          }
+      
+          #mars-g {
+            animation: mars-orbit 68724ms linear infinite;
+          }
+      
+          #jupiter-g {
+            animation: jupiter-orbit 4332.59ms linear infinite;
+          }
+      
+          #saturn-g {
+            animation: saturn-orbit 10759.22ms linear infinite;
+          }
+      
+          #uranus-g {
+            animation: uranus-orbit 30688.5ms linear infinite;
+          }
+      
+          #neptune-g {
+            animation: neptune-orbit 60182ms linear infinite;
+          }
+      
+          #pluto-g {
+            animation: pluto-orbit 90560ms linear infinite;
+          }
+
+          @keyframes mercury-orbit {
+            from {
+              transform: rotate(0deg);
+            }
+            to {
+              transform: rotate(360deg);
+            }
+          }
+      
+          @keyframes venus-orbit {
+            from {
+              transform: rotate(0deg);
+            }
+            to {
+              transform: rotate(360deg);
+            }
+          }
+      
+          @keyframes earth-orbit {
+            from {
+              transform: rotate(0deg);
+            }
+            to {
+              transform: rotate(360deg);
+            }
+          }
+      
+          @keyframes mars-orbit {
+            from {
+              transform: rotate(0deg);
+            }
+            to {
+              transform: rotate(360deg);
+            }
+          }
+      
+          @keyframes jupiter-orbit {
+            from {
+              transform: rotate(0deg);
+            }
+            to {
+              transform: rotate(360deg);
+            }
+          }
+      
+          @keyframes saturn-orbit {
+            from {
+              transform: rotate(0deg);
+            }
+            to {
+              transform: rotate(360deg);
+            }
+          }
+      
+          @keyframes uranus-orbit {
+            from {
+              transform: rotate(0deg);
+            }
+            to {
+              transform: rotate(360deg);
+            }
+          }
+      
+          @keyframes neptune-orbit {
+            from {
+              transform: rotate(0deg);
+            }
+            to {
+              transform: rotate(360deg);
+            }
+          }
+      
+          @keyframes pluto-orbit {
+            from {
+              transform: rotate(0deg);
+            }
+            to {
+              transform: rotate(360deg);
+            }
+          }
+        </style>
+    </head>
+      
+  <body>
+
+<!--2000x2000 SVG Art by Jeremiah Long (JL) depicting the Solar System and the Solar Year-->
+    <svg width="2000" height="2000">
+<!--// The Space Background (Purple -> Black Gradient)-->
+        <linearGradient id="space" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#00000" />
+            <stop offset="1" stop-color="#b300ff" />
+          </linearGradient>
+            <rect id="space" width="100%" height="100%" fill="url(#space)" />
+<!--The Gradients on the planets. Adding personality, backstories.-->
+        <linearGradient id="sun-gradient" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#FFFF00" />
+            <stop offset="1" stop-color="#FFA500" />
+          </linearGradient>
+          <linearGradient id="mercury-g" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="1" stop-color="grey" />
+            <stop offset="0" stop-color="white" />
+          </linearGradient>
+          <linearGradient id="venus-g" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="orange" />
+            <stop offset="1" stop-color="#b300ff" />
+          </linearGradient>
+          <linearGradient id="earth-g" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#0000ff" />
+            <stop offset="1" stop-color="green" />
+          </linearGradient>
+          <linearGradient id="mars-g" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="red" />
+            <stop offset="1" stop-color="00000" />
+          </linearGradient>
+          <linearGradient id="jupiter-g" x1="0" y1="0" x2="2" y2="1">
+            <stop offset="0" stop-color="orange" />
+            <stop offset="1" stop-color="red" />
+          </linearGradient>
+          <linearGradient id="saturn-g" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#008080" />
+            <stop offset="1" stop-color="yellow" />
+          </linearGradient>
+          <linearGradient id="uranus-g" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#00000" />
+            <stop offset="1" stop-color="lightblue" />
+          </linearGradient>
+          <linearGradient id="neptune-g" x1="1" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="blue" />
+            <stop offset="1" stop-color="grey" />
+          </linearGradient>
+          <linearGradient id="pluto-g" x1=".1" y1="0" x2=".3" y2="1">
+            <stop offset="0" stop-color="gray" />
+            <stop offset="1" stop-color="00000" />
+          </linearGradient>
+
+<!--The Size and Initial Position of the Planets-->
+        <circle id="sun-gradient" cx="100" cy="500" r="500" fill="url(#sun-gradient)" />
+        <circle id="mercury-g" class="planet-orbit" cx="200" cy="500" r="5" fill="url(#mercury-g)"/>
+        <circle id="venus-g" class="planet-orbit" cx="300" cy="500" r="10" fill="url(#venus-g)"/>
+        <circle id="earth-g" class="planet-orbit" cx="400" cy="500" r="105" fill="url(#earth-g)"/>
+        <circle id="mars-g" class="planet-orbit" cx="500" cy="500" r="25" fill="url(#mars-g)"/>
+        <circle id="jupiter-g" class="planet-orbit" cx="700" cy="500" r="250" fill="url(#jupiter-g)"/>
+        <circle id="saturn-g" class="planet-orbit" cx="840" cy="500" r="300" fill="url(#saturn-g)"/>
+        <circle id="uranus-g" class="planet-orbit" cx="950" cy="500" r="35" fill="url(#uranus-g)"/>
+        <circle id="neptune-g" class="planet-orbit" cx="1100" cy="500" r="40" fill="url(#neptune-g)"/>
+        <circle id="pluto-g" class="planet-orbit" cx="1250" cy="500" r="45" fill="url(#pluto-g)"/>
+        
+    </svg>
+  </body>
+  </html>
+  
